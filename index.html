@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixNamai</title>
+    <link rel="stylesheet" href="scr/style.css">
+    <link rel="stylesheet" href="scr/media.css">
+    <link rel="shortcut icon" href="img/FixNamaiPro (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+    
+    <div id="scroll-progress">
+  <div id="scroll-bar"></div>
+</div>
+
+    <header id="home">
+    <div class="container">
+        <div class="black-line">
+            <img class="logoImg" src="img/for site/FixNamaiEliteGrey.png" alt="logo">
+            
+        <div class="roditel">
+                        <header id="main-header">
+            <ul class="menu">
+    <!-- Pradžia / Home / Главная -->
+    <li>
+        <a href="#home" class="link" data-lang="LT"><b>Pradžia</b></a>
+        <a href="#home" class="link" data-lang="EN" style="display:none;"><b>Home</b></a>
+        <a href="#home" class="link" data-lang="RU" style="display:none;"><b>Главная</b></a>
+    </li>
+
+    <!-- Apie Mus / About Us / О нас -->
+    <li>
+        <a href="#about" class="link" data-lang="LT"><b>Apie Mus</b></a>
+        <a href="#about" class="link" data-lang="EN" style="display:none;"><b>About Us</b></a>
+        <a href="#about" class="link" data-lang="RU" style="display:none;"><b>О нас</b></a>
+    </li>
+
+    <!-- Paslaugos / Services / Услуги -->
+    <li>
+        <a href="#paslaugos" class="link" data-lang="LT"><b>Paslaugos</b></a>
+        <a href="#paslaugos" class="link" data-lang="EN" style="display:none;"><b>Services</b></a>
+        <a href="#paslaugos" class="link" data-lang="RU" style="display:none;"><b>Услуги</b></a>
+    </li>
+
+    <!-- Galerija / Gallery / Галерея -->
+    <li>
+        <a href="#galerija" class="link" data-lang="LT"><b>Galerija</b></a>
+        <a href="#galerija" class="link" data-lang="EN" style="display:none;"><b>Gallery</b></a>
+        <a href="#galerija" class="link" data-lang="RU" style="display:none;"><b>Галерея</b></a>
+    </li>
+
+    <!-- Kontaktai / Contacts / Контакты -->
+    <li>
+        <a href="#kontaktai" class="link" data-lang="LT"><b>Kontaktai</b></a>
+        <a href="#kontaktai" class="link" data-lang="EN" style="display:none;"><b>Contacts</b></a>
+        <a href="#kontaktai" class="link" data-lang="RU" style="display:none;"><b>Контакты</b></a>
+    </li>
+</ul>
+
+<div id="lang-switcher">
+  <button id="current-lang">LT</button>
+  <div id="lang-options">
+    <div class="lang-option" data-lang="EN">EN</div>
+    <div class="lang-option" data-lang="RU">RU</div>
+  </div>
+</div>
+
+            <div id="sticky-bar">
+             <ul class="menu">
+    <!-- Pradžia / Home / Главная -->
+    <li>
+        <a href="#home" class="link" data-lang="LT"><b>Pradžia</b></a>
+        <a href="#home" class="link" data-lang="EN" style="display:none;"><b>Home</b></a>
+        <a href="#home" class="link" data-lang="RU" style="display:none;"><b>Главная</b></a>
+    </li>
+
+    <!-- Apie Mus / About Us / О нас -->
+    <li>
+        <a href="#about" class="link" data-lang="LT"><b>Apie Mus</b></a>
+        <a href="#about" class="link" data-lang="EN" style="display:none;"><b>About Us</b></a>
+        <a href="#about" class="link" data-lang="RU" style="display:none;"><b>О нас</b></a>
+    </li>
+
+    <!-- Paslaugos / Services / Услуги -->
+    <li>
+        <a href="#paslaugos" class="link" data-lang="LT"><b>Paslaugos</b></a>
+        <a href="#paslaugos" class="link" data-lang="EN" style="display:none;"><b>Services</b></a>
+        <a href="#paslaugos" class="link" data-lang="RU" style="display:none;"><b>Услуги</b></a>
+    </li>
+
+    <!-- Galerija / Gallery / Галерея -->
+    <li>
+        <a href="#galerija" class="link" data-lang="LT"><b>Galerija</b></a>
+        <a href="#galerija" class="link" data-lang="EN" style="display:none;"><b>Gallery</b></a>
+        <a href="#galerija" class="link" data-lang="RU" style="display:none;"><b>Галерея</b></a>
+    </li>
+
+    <!-- Kontaktai / Contacts / Контакты -->
+    <li>
+        <a href="#kontaktai" class="link" data-lang="LT"><b>Kontaktai</b></a>
+        <a href="#kontaktai" class="link" data-lang="EN" style="display:none;"><b>Contacts</b></a>
+        <a href="#kontaktai" class="link" data-lang="RU" style="display:none;"><b>Контакты</b></a>
+    </li>
+</ul>
+        </div> 
+                        </header>
+                
+        </div>
+    </div>
+    </header>
+    <main>
+
+        <section class="pradzia">
+            <div class="contimg">  
+           <div class="txt">
+  <b data-lang="LT">
+    NAMŲ ŪKIO MEISTRAS <br>&<br> GAIVA JŪSŲ NAMAMS
+  </b>
+
+  <b data-lang="EN" style="display:none;">
+    HOME MAINTENANCE MASTER <br>&<br> FRESHNESS FOR YOUR HOME
+  </b>
+
+  <b data-lang="RU" style="display:none;">
+    МАСТЕР ПО ХОЗЯЙСТВУ <br>&<br> СВЕЖЕСТЬ ДЛЯ ВАШЕГО ДОМА
+  </b>
+</div>
+
+                <img class="imgNamu" src="img/for site/tema 3.png">
+            </div>
+            <div class="btnK">
+                <button class="okno " id="openModal">
+  <b data-lang="LT">Susisiekti su mumis</b>
+  <b data-lang="EN" style="display:none;">Contact us</b>
+  <b data-lang="RU" style="display:none;">Связаться с нами</b>
+</button>
+
+            </div>
+        </section>
+
+<div id="about" class="line"></div>
+
+        <section class="about">
+            <div class="aboutt">
+                <div class="stroke">
+  <b data-lang="LT">Apie Mus</b>
+  <b data-lang="EN" style="display:none;">About Us</b>
+  <b data-lang="RU" style="display:none;">О нас</b>
+</div>
+
+                <div class="infa">
+  <span data-lang="LT">
+    Turime daugiau kaip 20 metų patirties statybų, remonto ir apdailos darbuose.
+    Per ilgus darbo metus esame susidūrę su įvairiais projektais – nuo smulkių
+    taisymo darbų iki sudėtingesnių sprendimų, todėl galime pasiūlyti patikimą ir
+    patikrintą paslaugą. Dirbame su individualios veiklos pažyma, todėl esant
+    reikalui visada galime išrašyti sąskaitą. Įsikūrę esame Laisvės pr. 43-132,
+    Vilnius, tačiau dirbame ir aplinkiniuose rajonuose.
+  </span>
+
+  <span data-lang="EN" style="display:none;">
+    We have over 20 years of experience in construction, renovation, and
+    finishing works. Throughout the years, we have worked on a wide range of
+    projects – from small repair jobs to more complex solutions – allowing us
+    to provide reliable and proven services. We work under individual activity
+    certification and can issue invoices when required. Our office is located
+    at Laisvės pr. 43-132, Vilnius, and we also operate in surrounding areas.
+  </span>
+
+  <span data-lang="RU" style="display:none;">
+    Мы имеем более 20 лет опыта в сфере строительства, ремонта и отделочных
+    работ. За годы работы мы сталкивались с самыми разными проектами — от
+    мелкого ремонта до более сложных решений, поэтому можем гарантировать
+    надежный и качественный результат. Мы работаем по индивидуальной
+    деятельности и при необходимости предоставляем счет. Находимся по адресу
+    Лайсвес пр. 43-132, Вильнюс, также работаем в близлежащих районах.
+  </span>
+</div>
+
+                <div class="div">
+                    <div class="grafic">
+    <ul class="graficc">
+        <li>
+  <span class="day" data-lang="LT">Dirbame pagal grafiką:</span>
+  <span class="day" data-lang="EN" style="display:none;">Working hours:</span>
+  <span class="day" data-lang="RU" style="display:none;">График работы:</span>
+</li>
+
+<li>
+  <span class="day" data-lang="LT">Pirmadienis</span>
+  <span class="day" data-lang="EN" style="display:none;">Monday</span>
+  <span class="day" data-lang="RU" style="display:none;">Понедельник</span>
+  <span class="time">8:00 – 20:00</span>
+</li>
+
+<li>
+  <span class="day" data-lang="LT">Antradienis</span>
+  <span class="day" data-lang="EN" style="display:none;">Tuesday</span>
+  <span class="day" data-lang="RU" style="display:none;">Вторник</span>
+  <span class="time">8:00 – 20:00</span>
+</li>
+
+<li>
+  <span class="day" data-lang="LT">Trečiadienis</span>
+  <span class="day" data-lang="EN" style="display:none;">Wednesday</span>
+  <span class="day" data-lang="RU" style="display:none;">Среда</span>
+  <span class="time">8:00 – 20:00</span>
+</li>
+
+<li>
+  <span class="day" data-lang="LT">Ketvirtadienis</span>
+  <span class="day" data-lang="EN" style="display:none;">Thursday</span>
+  <span class="day" data-lang="RU" style="display:none;">Четверг</span>
+  <span class="time">8:00 – 20:00</span>
+</li>
+
+<li>
+  <span class="day" data-lang="LT">Penktadienis</span>
+  <span class="day" data-lang="EN" style="display:none;">Friday</span>
+  <span class="day" data-lang="RU" style="display:none;">Пятница</span>
+  <span class="time">8:00 – 20:00</span>
+</li>
+
+<li>
+  <span class="day" data-lang="LT">Šeštadienis</span>
+  <span class="day" data-lang="EN" style="display:none;">Saturday</span>
+  <span class="day" data-lang="RU" style="display:none;">Суббота</span>
+  <span class="time">8:00 – 20:00</span>
+</li>
+
+<li>
+  <span class="day" data-lang="LT">Sekmadienis</span>
+  <span class="day" data-lang="EN" style="display:none;">Sunday</span>
+  <span class="day" data-lang="RU" style="display:none;">Воскресенье</span>
+  <span class="time">8:00 – 20:00</span>
+</li>
+
+    </ul>
+</div>
+
+                    <div class="fotoc">
+                        <img class="foto " src="img/apie mus/apie mus foto.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+<div id="paslaugos" class="line"></div>
+       <section id="paslaugos" class="paslaugos">
+    <div class="pass">
+        <div class="pa">
+            <b data-lang="LT">Paslaugos</b>
+            <b data-lang="EN" style="display:none;">Services</b>
+            <b data-lang="RU" style="display:none;">Услуги</b>
+        </div>
+
+        <div class="tekstas">
+            <div class="one">
+                <p class="ab">
+                    <span data-lang="LT">1. Durų montavimas – 50–120 €  
+Montuojame vidines ir lauko duris, reguliuojame furnitūrą ir užtikriname sandarumą. Greita, tvarkinga ir profesionalu, tinka visiems namams ar butams.</span>
+
+                    <span data-lang="EN" style="display:none;">1. Door installation – 50–120 €  
+We install interior and exterior doors, adjust the fittings, and ensure tightness. Fast, clean, and professional. Suitable for all homes and apartments.</span>
+
+                    <span data-lang="RU" style="display:none;">1. Установка дверей – 50–120 €  
+Устанавливаем внутренние и внешние двери, регулируем фурнитуру и обеспечиваем герметичность. Быстро, аккуратно и профессионально. Подходит для всех домов и квартир.</span>
+                </p>
+            </div>
+            <div class="onea">
+                <img class="onea photo-zoom brd A" src="img/paslaugos/1 foto paslaugos.jpg">
+            </div>
+        </div>
+
+        <div class="tekstass">
+            <div class="two">
+                <img class="two photo-zoom brd A" src="img/paslaugos/2 foto pasalugos.jpg">
+            </div>
+            <div class="twoa">
+                <p class="ab">
+                    <span data-lang="LT">2. Balkono remontas – 250 €  
+Atliekame grindų, sienų ir turėklų remontą, pašaliname drėgmę ir trūkumus. Darbai atliekami saugiai, greitai ir tvarkingai.</span>
+
+                    <span data-lang="EN" style="display:none;">2. Balcony renovation – 250 €  
+We repair floors, walls, and railings, eliminate moisture and defects. Work is done safely, quickly, and neatly.</span>
+
+                    <span data-lang="RU" style="display:none;">2. Ремонт балкона – 250 €  
+Ремонтируем пол, стены и перила, устраняем влагу и дефекты. Работа выполняется безопасно, быстро и аккуратно.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="tekstasss">
+            <div class="tri">
+                <p class="ab">
+                    <span data-lang="LT">3. Sienų dažymas – 15 €/m²  
+Dažome gyvenamąsias ir komercines patalpas, lygiuojame paviršių, naudojame kokybiškus dažus, kad rezultatas būtų ilgalaikis ir estetiškas.</span>
+
+                    <span data-lang="EN" style="display:none;">3. Wall painting – 15 €/m²  
+We paint residential and commercial spaces, smooth the surfaces, and use quality paints for a long-lasting and aesthetic result.</span>
+
+                    <span data-lang="RU" style="display:none;">3. Покраска стен – 15 €/м²  
+Красим жилые и коммерческие помещения, выравниваем поверхности, используем качественные краски для долговечного и эстетичного результата.</span>
+                </p>
+            </div>
+            <div class="tria">
+                <img class="tria photo-zoom brd A" src="img/paslaugos/3 foto paslaugos.jpg">
+            </div>
+        </div>
+
+        <div class="tekstass">
+            <div class="two">
+                <img class="twwo photo-zoom brd A" src="img/paslaugos/4 foto paslaugos.jpg">
+            </div>
+            <div class="twob">
+                <p class="ab">
+                    <span data-lang="LT">4. Plytelių klojimas – 30 €/m²  
+Klojame keramines, mozaikines ar klinkerio plyteles virtuvėse, vonios kambariuose ar balkonuose, su tinkama hidroizoliacija ir tikslumu.</span>
+
+                    <span data-lang="EN" style="display:none;">4. Tile laying – 30 €/m²  
+We lay ceramic, mosaic, or clinker tiles in kitchens, bathrooms, or balconies with proper waterproofing and precision.</span>
+
+                    <span data-lang="RU" style="display:none;">4. Укладка плитки – 30 €/м²  
+Укладываем керамическую, мозаичную или клинкерную плитку в кухнях, ванных или на балконах с правильной гидроизоляцией и точностью.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="tekstasss">
+            <div class="tri">
+                <p class="ab c">
+                    <span data-lang="LT">5. Grindų montavimas – 15–25 €/m²  
+Montuojame laminatą, parketą ir vinilą, paruošiame pagrindą, užtikriname lygią dangą, kad būtų patogu ir estetiška.</span>
+
+                    <span data-lang="EN" style="display:none;">5. Flooring installation – 15–25 €/m²  
+We install laminate, parquet, and vinyl, prepare the base, and ensure smooth coverage for comfort and aesthetics.</span>
+
+                    <span data-lang="RU" style="display:none;">5. Настилка полов – 15–25 €/м²  
+Устанавливаем ламинат, паркет и винил, подготавливаем основу, обеспечиваем ровное покрытие для комфорта и эстетики.</span>
+                </p>
+            </div>
+            <div class="tria">
+                <img class="trii photo-zoom brd A" src="img/paslaugos/5 foto paslaugos.jpg">
+            </div>
+        </div>
+
+        <div class="tekstass">
+            <div class="twwo">
+                <img class="twwo photo-zoom brd A" src="img/paslaugos/6 foto  paslaugos.jpg">
+            </div>
+            <div class="twoa">
+                <p class="ab">
+                    <span data-lang="LT">6. Gipsavimas / apdaila – 10 €/m²  
+Gipsuojame sienas ir lubas, lyginame paviršių, paruošiame dažymui ar tapetavimui. Galima papildoma dekoratyvinė apdaila.</span>
+
+                    <span data-lang="EN" style="display:none;">6. Plastering / finishing – 10 €/m²  
+We plaster walls and ceilings, smooth surfaces, and prepare for painting or wallpapering. Additional decorative finishing possible.</span>
+
+                    <span data-lang="RU" style="display:none;">6. Штукатурка / отделка – 10 €/м²  
+Штукатурим стены и потолки, выравниваем поверхности, готовим к покраске или оклейке обоями. Возможна дополнительная декоративная отделка.</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<div id="galerija" class="line"></div>
+        <section class="galerija">
+<div class="fullgalerija">
+        <div class="column87">
+    <div class="fortnite">
+        <p>
+            <b data-lang="LT">Galerija</b>
+            <b data-lang="EN" style="display:none;">Gallery</b>
+            <b data-lang="RU" style="display:none;">Галерея</b>
+        </p>
+    </div>
+
+    <div class="texty45">
+        <div class="text20 persik zoom55">
+            <p class="q">
+                <span data-lang="LT">Atrask mūsų statybos ir remonto pasaulį galerijoje:</span>
+                <span data-lang="EN" style="display:none;">Discover our construction and renovation world in the gallery:</span>
+                <span data-lang="RU" style="display:none;">Откройте наш мир строительства и ремонта в галерее:</span>
+            </p>
+        </div>
+
+        <div class="tex21 persik zoom54">
+            <p class="q">
+                <span data-lang="LT">Ivertink musu poziuri i remonta bei statyba</span>
+                <span data-lang="EN" style="display:none;">Check out our approach to renovation and construction</span>
+                <span data-lang="RU" style="display:none;">Оцените наш подход к ремонту и строительству</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+            <div class="foto20">
+                <div class="a1"><img  class="b1 photo-zoom brd " src="img/galereja glavnoe menu/1 foto galereja menu.jpg"></div>
+            <div class="a2"><img class="b2 photo-zoom brd" src="img/galereja glavnoe menu/2 foto galereja menu.jpg"></div>
+            </div>
+            <div class="foto21">
+
+            <div class="a4"><img class="b4 photo-zoom brd" src="img/galereja glavnoe menu/3 foto galereja menu.jpg"></div>
+            <div class="a5"><img class="b5 photo-zoom brd" src="img/galereja glavnoe menu/4 foto galereja menu.jpg"></div>
+            </div>
+            <div class="foto22">
+                <div class="a6"><img class="b6 photo-zoom brd" src="img/galereja glavnoe menu/5 foto galereja menu.jpg"></div>
+            <div class="a7"><img class="b7 photo-zoom brd" src="img/galereja glavnoe menu/6 foto galereja menu.jpg"></div>
+            
+        
+        </div>
+        <div class="okno22">
+            <div class="okno23">
+    <button id="openGallery" class="okno okn photo-zoomm">
+        <b data-lang="LT">Daugiau...</b>
+        <b data-lang="EN" style="display:none;">More...</b>
+        <b data-lang="RU" style="display:none;">Больше...</b>
+    </button>
+</div>
+
+        </div>
+        </div>
+</div>
+        </section>
+<div id="kontaktai" class="line"></div>
+
+<section id="kontaktai" class="mapp">
+  <div class="cont">
+    <p class="contt">
+      <b data-lang="LT">Kontaktai</b>
+      <b data-lang="EN" style="display:none;">Contacts</b>
+      <b data-lang="RU" style="display:none;">Контакты</b>
+    </p>
+  </div>
+
+  <div class="kontaktaiCont">
+    <div class="map-box">
+      <div id="map"></div>
+    </div>
+    <ul class="fott">
+      <li class="foot">
+        <b data-lang="LT" ><a href="https://maps.app.goo.gl/EjD8drGR5nsNy7M57" class="www">Laisves Prospektas 43-132 Vilnius</a></b>
+        <b data-lang="EN" style="display:none;"><a href="https://maps.app.goo.gl/EjD8drGR5nsNy7M57" class="www">Laisves Avenue 43-132 Vilnius</a></b>
+        <b data-lang="RU" style="display:none;"><a href="https://maps.app.goo.gl/EjD8drGR5nsNy7M57" class="www">Проспект Лайсвес 43-132, Вильнюс</a></b>
+      </li>
+      <li class="foot">
+        <b>+370 64742 829</b>
+      </li>
+      <li class="foot">
+        <b data-lang="LT">fixnamai@gmail.com</b>
+        <b data-lang="EN" style="display:none;">fixnamai@gmail.com</b>
+        <b data-lang="RU" style="display:none;">fixnamai@gmail.com</b>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="fotter">
+    <div class="god">
+      <b data-lang="LT">© 2026 Visos teisės saugomos</b>
+      <b data-lang="EN" style="display:none;">© 2026 All rights reserved</b>
+      <b data-lang="RU" style="display:none;">© 2026 Все права защищены</b>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="modalOverlay" class="modal-overlay">
+  <div class="modal-content">
+
+    <!-- NAV -->
+    <div class="modal-nav">
+      <button id="showLogin" class="nav-btn">
+        <span data-lang="LT">Prisijungti</span>
+        <span data-lang="EN" style="display:none;">Login</span>
+        <span data-lang="RU" style="display:none;">Войти</span>
+      </button>
+
+      <button id="showRegister" class="nav-btn">
+        <span data-lang="LT">Registruotis</span>
+        <span data-lang="EN" style="display:none;">Register</span>
+        <span data-lang="RU" style="display:none;">Регистрация</span>
+      </button>
+    </div>
+
+    <!-- LOGIN -->
+    <form id="loginForm" class="modal-form">
+
+      <input id="loginUser" type="text"
+        data-lt="Telefono numeris arba el. pastas"
+        data-en="Phone number or email"
+        data-ru="Телефон или эл. почта"
+        placeholder="Telefono numeris arba el. pastas">
+
+      <input id="loginPass" type="password"
+        data-lt="Slaptazodis"
+        data-en="Password"
+        data-ru="Пароль"
+        placeholder="Slaptazodis">
+
+      <div class="error-msg"
+        id="loginError"
+        data-lt="Uzpildykite visus laukus"
+        data-en="Please fill all fields"
+        data-ru="Заполните все поля">
+      </div>
+
+      <button type="button" id="loginSubmit">
+        <span data-lang="LT">Prisijungti</span>
+        <span data-lang="EN" style="display:none;">Login</span>
+        <span data-lang="RU" style="display:none;">Войти</span>
+      </button>
+    </form>
+
+    <!-- REGISTER -->
+    <form id="registerForm" class="modal-form" style="display:none;">
+
+      <input id="regName" type="text"
+        data-lt="Vardas"
+        data-en="Name"
+        data-ru="Имя"
+        placeholder="Vardas">
+
+      <input id="regSurname" type="text"
+        data-lt="Pavarde"
+        data-en="Surname"
+        data-ru="Фамилия"
+        placeholder="Pavarde">
+
+      <input id="regPhone" type="text"
+        data-lt="Telefono numeris"
+        data-en="Phone number"
+        data-ru="Телефон"
+        placeholder="Telefono numeris">
+
+      <input id="regEmail" type="email"
+        data-lt="El. pastas"
+        data-en="Email"
+        data-ru="Почта"
+        placeholder="El. pastas">
+
+      <input id="regPass" type="password"
+        data-lt="Slaptazodis"
+        data-en="Password"
+        data-ru="Пароль"
+        placeholder="Slaptazodis">
+
+      <input id="regPassConfirm" type="password"
+        data-lt="Patvirtinti slaptazodi"
+        data-en="Confirm password"
+        data-ru="Повторите пароль"
+        placeholder="Patvirtinti slaptazodi">
+
+      <div class="error-msg"
+        id="regError"
+        data-lt="Patikrinkite ivestus duomenis"
+        data-en="Check entered data"
+        data-ru="Проверьте введённые данные">
+      </div>
+
+      <button type="button" id="registerSubmit">
+        <span data-lang="LT">Registruotis</span>
+        <span data-lang="EN" style="display:none;">Register</span>
+        <span data-lang="RU" style="display:none;">Зарегистрироваться</span>
+      </button>
+    </form>
+
+    <!-- PROBLEM -->
+    <form id="problemForm" class="modal-form" style="display:none;">
+
+      <select id="citySelect">
+        <option value=""
+          data-lt="Pasirinkite rajona"
+          data-en="Select area"
+          data-ru="Выберите район">
+          Pasirinkite rajona
+        </option>
+        <option>Vilnius</option>
+        <option>Pilaite</option>
+        <option>Fabijoniskes</option>
+        <option>Antakalnis</option>
+        <option>Justiniskes</option>
+        <option>Naujamiestis</option>
+        <option>Snipiskes</option>
+        <option>Verkiai</option>
+      </select>
+
+      <select id="serviceSelect">
+        <option value=""
+          data-lt="Pasirinkite paslauga"
+          data-en="Select service"
+          data-ru="Выберите услугу">
+          Pasirinkite paslauga
+        </option>
+        <option>Remontas</option>
+        <option>Apdaila</option>
+        <option>Elektros darbai</option>
+        <option>Santechnika</option>
+        <option>Gipsavimas</option>
+        <option>Dažymas</option>
+        <option>Interjero darbai</option>
+      </select>
+
+      <textarea id="problemDesc"
+        data-lt="Aprasykite problema"
+        data-en="Describe the problem"
+        data-ru="Опишите проблему"
+        placeholder="Aprasykite problema"></textarea>
+
+      <div class="error-msg"
+        id="problemError"
+        data-lt="Uzpildykite visus laukus"
+        data-en="Fill all fields"
+        data-ru="Заполните все поля">
+      </div>
+
+      <button type="button" id="problemSubmit">
+        <span data-lang="LT">Siusti</span>
+        <span data-lang="EN" style="display:none;">Send</span>
+        <span data-lang="RU" style="display:none;">Отправить</span>
+      </button>
+    </form>
+
+    <span id="closeModal" class="modal-close">&times;</span>
+  </div>
+</div>
+<!-- GALLERY MODAL -->
+<div id="galleryModal" class="gallery-modal">
+  <span class="gallery-close">&times;</span>
+
+  <div class="gallery-grid">
+    <img src="img/galereja daugiau/1 foto galereja daugiau.jpg">
+    <img src="img/galereja daugiau/2 foto galereja daugiau.jpg">
+    <img src="img/galereja daugiau/3 foto galereja daugiau.jpg">
+   <img src="img/galereja daugiau/4 foto galereja daugiau.jpg">
+    <img src="img/galereja daugiau/5 foto galereja daugiau.jpg">
+        <img src="img/galereja daugiau/6 foto galereja daugiau.jpg">
+    <img src="img/galereja daugiau/7 foto galereja daugiau.jpg">
+    <img src="img/galereja daugiau/8 foto galereja daugiau.jpg">
+   <img src="img/galereja daugiau/9 foto galereja daugiau.jpg">
+    <img src="img/galereja daugiau/10 foto galereja daugiau.jpg">
+        <img src="img/galereja daugiau/11 foto galereja daugiau.jpg">
+    <img src="img/galereja daugiau/12 foto galereja daugiau.jpg">
+    <img src="img/galereja daugiau/13 foto galereja daugiau.jpg">
+   <img src="img/galereja daugiau/14 foto galereja daugiau.jpg">
+    <img src="img/galereja daugiau/15 foto galereja daugiau.jpg">
+     <img src="img/galereja daugiau/16 foto galereja daugiau.jpg">
+      <img src="img/galereja daugiau/17 foto galereja daugiau.jpg">
+       <img src="img/galereja daugiau/18 foto galereja daugiau.jpg">
+        <img src="img/galereja daugiau/19 foto galereja daugiau.jpg">
+         <img src="img/galereja daugiau/20 foto galereja daugiau.jpg">
+          <img src="img/galereja daugiau/21 foto galereja daugiau.jpg">
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("DR-BHsqBKfIgtXMjP");
+</script> 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="scr/script.js"></script>
+     <script src="cursor.js"></script>
+    <div class="cursor"></div>
+  <div class="cursor-trail"></div>
+
+  <script>
+    const cursor = document.querySelector('.cursor');
+    const trail = document.querySelector('.cursor-trail');
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let trailX = mouseX;
+    let trailY = mouseY;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      cursor.style.left = mouseX + 'px';
+      cursor.style.top = mouseY + 'px';
+    });
+
+    function animate() {
+      trailX += (mouseX - trailX) * 0.08;
+      trailY += (mouseY - trailY) * 0.08;
+
+      trail.style.left = trailX + 'px';
+      trail.style.top = trailY + 'px';
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script> 
+</body>
+</html>
